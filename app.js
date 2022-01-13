@@ -1,22 +1,23 @@
 const URL = "http://api.quotable.io/random";
 
+const quote = document.querySelector(".quote");
+const author = document.querySelector(".author");
 
 fetch(URL)
     .then(res => {
-        if(res.ok){
+        if (res.ok) {
             return res.json();
-        }else{
+        } else {
             throw new Error("Something wrong with Response");
         }
     })
     .then(info => {
-        console.log(info); // contains random quote from the api
+        quote.textContent = `"${info.content}"`
+        author.textContent = `- ${info.author}`
     })
-    .catch(error=>{
+    .catch(error => {
         console.log(error);
     })
-
-
 
 
 
