@@ -38,14 +38,32 @@ getQuote().then((quoteObj) => {
     console.log(error);
 })
 
-const btn = document.querySelector(".btn");
+const btnStop = document.querySelector(".btn-stop");
+const btnStart = document.querySelector(".btn-start");
 
-btn.addEventListener("click",()=>{
+const TIME = 7000;
+
+let id = setInterval(() => {
     getQuote().then((quoteObj) => {
         quote.textContent = `"${quoteObj.content}"`
         author.textContent = `- ${quoteObj.author}`
     }).catch((error) => {
         console.log(error);
     })
+}, TIME);
+
+btnStart.addEventListener("click", () => {
+    id = setInterval(() => {
+        getQuote().then((quoteObj) => {
+            quote.textContent = `"${quoteObj.content}"`
+            author.textContent = `- ${quoteObj.author}`
+        }).catch((error) => {
+            console.log(error);
+        })
+    }, TIME);
+})
+
+btnStop.addEventListener("click", () => {
+    clearInterval(id);
 })
 
