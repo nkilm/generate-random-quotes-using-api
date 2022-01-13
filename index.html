@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- <link rel="icon" type="image/ico" href="./quote.ico"> -->
     <title>Quotes | Welcome</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./app.js" defer></script>
@@ -17,7 +18,12 @@
                 </div>
                 <h3 class="quote"></h3>
                 <h4 class="author"></h4>
-                <button class="btn">new quote</button>
+                <button class="btn btn-stop">Stop</button>
+                <button class="btn btn-start">Start</button>
+                <div class="time">
+                    <label for="timeInterval">New Quote After:</label>
+                    <input type="text" name="timeInterval" id="timeInterval" placeholder="time in s">
+                </div>
         </div>
     </header>
 </body>
