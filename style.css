@@ -19,15 +19,17 @@ html {
     text-align: center;
 }
 
+
 .quote{
+    color: rgb(54, 54, 54);
     font-size: 3rem;
     margin: 1.5rem 0;
     padding: 1rem 10rem;
-    
 }
 
 .author{
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
+    color: rgb(54, 54, 54);
 }
 
