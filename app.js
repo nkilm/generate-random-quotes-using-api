@@ -1,4 +1,4 @@
-const URL = "http://api.quotable.io/random";
+const URL = "https://api.quotable.io/random";
 
 const quote = document.querySelector(".quote");
 const author = document.querySelector(".author");
