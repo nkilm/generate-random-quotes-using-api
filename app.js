@@ -41,7 +41,7 @@ getQuote().then((quoteObj) => {
 const btnStop = document.querySelector(".btn-stop");
 const btnStart = document.querySelector(".btn-start");
 
-const TIME = 7000;
+const TIME = 10000;
 
 let id = setInterval(() => {
     getQuote().then((quoteObj) => {
