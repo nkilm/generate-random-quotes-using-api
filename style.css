@@ -47,11 +47,12 @@ html {
 .btn {
     text-transform: uppercase;
     padding: 0.9rem 2.3rem;
-    margin-top: 8rem;
     border: 0;
     outline: 0;
     border-radius: 0.8rem;
-    margin-right: 2rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 
@@ -65,3 +66,46 @@ html {
     -moz-box-shadow: 0px 0px 8px 0px rgba(25, 135, 84, 0.79);
     box-shadow: 0px 0px 8px 0px rgba(25, 135, 84, 0.79);
 }
+
+@media (max-width:500px){
+    html{
+        font-size: 7px;
+    }
+    
+    .quote{
+        /* font-size: 10px; */
+        padding: 8px 0;
+    }
+    
+    .logo object{
+        height: 90px;
+        width: 90px;
+    }
+
+    .btn{
+        margin-top: 20px;
+    }
+}
+
+
+@media (min-width:501px) and (max-width:920px) {
+    html{
+        font-size: 9px;
+    }
+    .quote{
+        /* font-size: 10px; */
+        padding: 8px 0;
+    }
+    
+    .logo object{
+        height: 150px;
+        width: 120px;
+    }
+
+    .btn{
+        margin-top: 20px;
+    }
+}
+
+
+
